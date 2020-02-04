@@ -7,26 +7,15 @@ module.exports = {
         sourceType: "module"
     },
     plugins: [
-        "import"
+        "import",
     ],
 
     settings: {
         "import/resolver": {
             node: {
-                extensions: [".mjs", ".js", ".json"]
+                extensions: [".mjs", ".js", ".json", ".ts"]
             }
         },
-        "import/extensions": [
-            ".js",
-            ".mjs",
-            ".jsx",
-        ],
-        "import/core-modules": [
-        ],
-        "import/ignore": [
-            "node_modules",
-            "\\.(coffee|scss|css|less|hbs|svg|json|ts)$",
-        ],
     },
 
     rules: {
@@ -134,14 +123,6 @@ module.exports = {
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-namespace.md
         "import/no-namespace": "off",
 
-        // Ensure consistent use of file extension within the import path
-        // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
-        "import/extensions": ["error", "ignorePackages", {
-            js: "never",
-            mjs: "never",
-            jsx: "never",
-        }],
-
         // ensure absolute imports are above relative imports and that unassigned imports are
         // ignored
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
@@ -151,10 +132,6 @@ module.exports = {
         // Require a newline after the last import/require in a group
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
         "import/newline-after-import": "error",
-
-        // Require modules with a single export to use a default export
-        // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-        "import/prefer-default-export": "error",
 
         // Restrict which files can be imported in a given folder
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
