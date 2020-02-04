@@ -1,5 +1,5 @@
 {
-  "name": "style",
+  "name": "eslint-config-style",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -14,22 +14,24 @@
     "@babel/runtime": "^7.6.2",
     "@babel/preset-env": "^7.4.5",
     "babel-tape-runner": "^3.0.0",
-    "eclint": "^2.8.1",
-    "eslint": "^5.16.0 || ^6.7.2",
-    "eslint-find-rules": "^3.4.0",
-    "eslint-plugin-import": "^2.18.2",
-    "tape": "^4.11.0"
-  },
-  "peerDependencies": {
-    "eslint": "^5.16.0 || ^6.7.2",
-    "eslint-plugin-import": "^2.18.2"
+    "tape": "^4.11.0",
+    "typescript": "^3.6.3"
   },
   "engines": {
     "node": ">= 6"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
     "confusing-browser-globals": "^1.0.9",
+    "eclint": "^2.8.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-find-rules": "^3.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.2",
     "object.assign": "^4.1.0",
-    "object.entries": "^1.1.0"
+    "object.entries": "^1.1.0",
+    "prettier": "^1.19.1"
   }
 }
